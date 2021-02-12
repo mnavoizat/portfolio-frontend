@@ -1,0 +1,139 @@
+.top {
+  width: 100%;
+  min-height: 500px;
+  background-color: #00ad91;
+}
+.bot {
+  width: 100%;
+  min-height: 450px;
+
+  background-color: #fafafc;
+  position: relative;
+}
+.form {
+  height: 650px;
+  width: 1000px;
+  background-color: white;
+  position: absolute;
+  top: -350px;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 2px 4px -2px lightgrey;
+}
+.form h1 {
+  padding: 50px 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.col1 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.line {
+  display: flex;
+}
+.inputDiv {
+  flex: 1;
+  display: flex;
+  padding: 30px;
+}
+.input {
+  flex: 1;
+}
+.buttonDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: #00ad91;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonDis {
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  color: white;
+  cursor: not-allowed;
+}
+.buttonText {
+  font-size: 20px;
+}
+.col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.col2 h2 {
+  font-size: 22px;
+  padding: 60px;
+  text-align: center;
+}
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon {
+  color: #00ad91;
+}
+.col2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #00ad91;
+}
+.rond {
+  width: 80px;
+  height: 80px;
+  border: solid 2px #00ad91;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.rond:hover {
+  background-color: #00ad91;
+  border: solid 2px #00ad91;
+}
+.rond:hover > .icon {
+  color: white;
+}
+.finish {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.finishText {
+  margin-bottom: 50px;
+}
+.finish p {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}

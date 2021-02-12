@@ -1,0 +1,27 @@
+.block1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 550px;
+}
+.block1 h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.block1 h2 {
+  font-size: 22px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.line {
+  border-bottom: black solid 1px;
+  width: 100%;
+  padding-top: 10px;
+}
