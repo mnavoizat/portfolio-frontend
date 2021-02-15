@@ -69,7 +69,13 @@ export default function Item({ pageContext }) {
         </div>
         <div className={styles.carousel}>
           <Carousel
-            showThumbs={window?.screen.width < 576 ? false : true}
+            showThumbs={
+              typeof window === `undefined`
+                ? true
+                : window.screen.width < 576
+                ? false
+                : true
+            }
             showArrows={true}
           >
             {item.pictures?.map((element, index) => {
