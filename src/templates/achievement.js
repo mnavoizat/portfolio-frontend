@@ -67,8 +67,11 @@ export default function Item({ pageContext }) {
             </div>
           </div>
         </div>
-        <div className={item.name !== "NovelClass" ? null : styles.carousel}>
-          <Carousel>
+        <div className={styles.carousel}>
+          <Carousel
+            showThumbs={window?.screen.width < 576 ? false : true}
+            showArrows={true}
+          >
             {item.pictures?.map((element, index) => {
               return (
                 <div

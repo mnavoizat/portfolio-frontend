@@ -1,21 +1,23 @@
 .top {
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   background-color: #00ad91;
 }
 .bot {
   width: 100%;
-  min-height: 450px;
+  min-height: 400px;
 
   background-color: #fafafc;
   position: relative;
 }
+.formCont {
+  position: relative;
+}
 .form {
-  height: 650px;
-  width: 1000px;
+  width: 100%;
   background-color: white;
   position: absolute;
-  top: -350px;
+  top: -300px;
   border-radius: 10px;
   display: flex;
   box-shadow: 0 2px 4px -2px lightgrey;
@@ -67,6 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px 0;
 }
 .buttonDis {
   background-color: lightgray;
@@ -77,6 +80,7 @@
   border-radius: 10px;
   color: white;
   cursor: not-allowed;
+  margin: 50px 0;
 }
 .buttonText {
   font-size: 20px;
@@ -124,6 +128,7 @@
 }
 .finish {
   flex: 1;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,4 +141,60 @@
   font-size: 20px;
   text-align: center;
   padding: 5px;
+}
+.buttonFinish {
+  background-color: #00ad91;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+@media (max-width: 1180px) {
+  .formCont {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 576px) {
+  .form {
+    flex-direction: column;
+    top: -350px;
+  }
+  .bot {
+    min-height: 350px;
+  }
+  .col1 {
+    margin-left: 0;
+  }
+  .form h1 {
+    font-size: 24px;
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+  .line {
+    flex-direction: column;
+  }
+  .inputDiv {
+    padding: 15px 30px;
+  }
+  .col2 {
+    display: none;
+  }
+
+  .finishText {
+    padding-top: 150px;
+  }
+  .finish p {
+    font-size: 16px;
+  }
+  .buttonFinish {
+    margin-bottom: 150px;
+  }
 }

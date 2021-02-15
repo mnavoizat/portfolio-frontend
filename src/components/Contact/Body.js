@@ -77,7 +77,7 @@ const Body = () => {
     <div>
       <div className={styles.top}></div>
       <div className={styles.bot}>
-        <div className="container">
+        <div className={`container ${styles.formCont}`}>
           <div className={styles.form}>
             {!finished ? (
               <>
@@ -217,7 +217,7 @@ const Body = () => {
                   <p>Merci pour votre message.</p>
                   <p>Je reviendrai vers vous au plus vite.</p>
                 </div>
-                <Link to="/" className={styles.button}>
+                <Link to="/" className={styles.buttonFinish}>
                   <p className={styles.buttonText}>Retour</p>
                 </Link>
               </div>

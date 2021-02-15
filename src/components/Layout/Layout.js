@@ -35,69 +35,71 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <button
-        onClick={() => {
-          setIsDrawerOpen(!isDrawerOpen)
-        }}
-        className={styles.burger}
-      >
-        <FontAwesomeIcon icon={faBars} size="2x" />
-      </button>
-      <Drawer
-        anchor="left"
-        position="fixed"
-        open={isDrawerOpen}
-        onClose={() => {
-          setIsDrawerOpen(!isDrawerOpen)
-        }}
-        className={styles.drawer}
-        classes={{ paper: drawerStyles.paper }}
-      >
-        <List className={styles.list}>
-          <Link to="/" className={styles.listItem}>
-            <ListItem button>
-              <ListItemText>Home</ListItemText>
+      <div className={styles.header}>
+        <button
+          onClick={() => {
+            setIsDrawerOpen(!isDrawerOpen)
+          }}
+          className={styles.burger}
+        >
+          <FontAwesomeIcon icon={faBars} size="2x" />
+        </button>
+        <Drawer
+          anchor="left"
+          position="fixed"
+          open={isDrawerOpen}
+          onClose={() => {
+            setIsDrawerOpen(!isDrawerOpen)
+          }}
+          className={styles.drawer}
+          classes={{ paper: drawerStyles.paper }}
+        >
+          <List className={styles.list}>
+            <Link to="/" className={styles.listItem}>
+              <ListItem button>
+                <ListItemText>Home</ListItemText>
+              </ListItem>
+            </Link>
+            <Divider />
+            <ListItem button onClick={() => setIsListOpen(!isListOpen)}>
+              <ListItemText primary="Réalisations" />
+              {isListOpen ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
-          </Link>
-          <Divider />
-          <ListItem button onClick={() => setIsListOpen(!isListOpen)}>
-            <ListItemText primary="Réalisations" />
-            {isListOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse in={isListOpen} timeout="auto" unmountOnExit>
-            <List>
-              {["Syn'Up", "NovelClass", "TellMeMore", "Vinted", "Marvel"].map(
-                (text, index) => {
-                  return (
-                    <Link
-                      to={`/realisation/${text}`}
-                      className={styles.listItem}
-                      key={index}
-                    >
-                      <ListItem
-                        button
-                        key={text}
-                        className={styles.subListItem}
+            <Collapse in={isListOpen} timeout="auto" unmountOnExit>
+              <List>
+                {["Syn'Up", "NovelClass", "TellMeMore", "Vinted", "Marvel"].map(
+                  (text, index) => {
+                    return (
+                      <Link
+                        to={`/realisation/${text}`}
+                        className={styles.listItem}
+                        key={index}
                       >
-                        <ListItemText
-                          primary={text}
-                          classes={{ primary: drawerStyles.text }}
-                        />
-                      </ListItem>
-                    </Link>
-                  )
-                }
-              )}
-            </List>
-          </Collapse>
-          <Divider />
-          <Link to="/contact" className={styles.listItem}>
-            <ListItem button>
-              <ListItemText>Me contacter</ListItemText>
-            </ListItem>
-          </Link>
-        </List>
-      </Drawer>
+                        <ListItem
+                          button
+                          key={text}
+                          className={styles.subListItem}
+                        >
+                          <ListItemText
+                            primary={text}
+                            classes={{ primary: drawerStyles.text }}
+                          />
+                        </ListItem>
+                      </Link>
+                    )
+                  }
+                )}
+              </List>
+            </Collapse>
+            <Divider />
+            <Link to="/contact" className={styles.listItem}>
+              <ListItem button>
+                <ListItemText>Me contacter</ListItemText>
+              </ListItem>
+            </Link>
+          </List>
+        </Drawer>
+      </div>
       {children}
       <div className={styles.footer}>
         <div className="container">

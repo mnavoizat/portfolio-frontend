@@ -41,3 +41,18 @@
 .icon {
   padding-top: 50px;
 }
+@media (max-width: 1180px) {
+  .skills {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 576px) {
+  .skills {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  .col1 {
+    border-right: none;
+    border-bottom: solid 1px lightgray;
+  }
+}

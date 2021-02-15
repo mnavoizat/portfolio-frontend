@@ -19,3 +19,19 @@
   font-weight: 700;
   padding: 10px 0;
 }
+@media (max-width: 1180px) {
+  .bonjour {
+    padding: 10px 20px;
+  }
+  .other {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .bonjour {
+    font-size: 18px;
+  }
+  .other {
+    font-size: 14px;
+  }
+}

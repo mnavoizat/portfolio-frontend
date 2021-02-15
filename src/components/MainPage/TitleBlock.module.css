@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 550px;
+  padding-top: 50px;
 }
 .block1 h1 {
   font-size: 36px;
@@ -13,6 +14,7 @@
   font-size: 22px;
   padding: 20px 0;
   text-transform: uppercase;
+  text-align: center;
 }
 .profilePic {
   width: 200px;
@@ -24,4 +26,18 @@
   border-bottom: black solid 1px;
   width: 100%;
   padding-top: 10px;
+}
+@media (max-width: 576px) {
+  .block1 {
+    min-height: 450px;
+  }
+  .subTitle {
+    width: 285px;
+  }
+  .block1 h1 {
+    font-size: 26px;
+  }
+  .block1 h2 {
+    font-size: 16px;
+  }
 }
