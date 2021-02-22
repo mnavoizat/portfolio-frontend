@@ -11,9 +11,8 @@ const PresentationBlock = () => {
           nucléaire, d'abord en tant qu'ingénieur d'études puis en tant que
           responsable technique, j'ai décidé de me reconvertir et de devenir
           développeur web afin de travailler sur des projets à échelle humaine.
-          <br />
           Etant arrivé au terme d'une formation intensive de 3 mois au Reacteur,
-          je suis actuellement à la recherche d'un poste de développeur
+          je suis actuellement à la recherche d'un poste/stage de développeur
           JavaScript sur Paris.
         </p>
         <p className={styles.bonjour}>

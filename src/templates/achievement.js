@@ -111,11 +111,24 @@ export default function Item({ pageContext }) {
           </div>
           <div>
             <h2>Stack :</h2>
-            <ul>
-              {item.stack?.map((elem, index) => {
-                return <li key={index}>{elem}</li>
+            <div className={styles.stackDiv}>
+              {item.stack[0].map((item2, index2) => {
+                return (
+                  <span key={index2} className={styles.stackElemFront}>
+                    {item2}
+                  </span>
+                )
               })}
-            </ul>
+            </div>
+            <div className={styles.stackDiv}>
+              {item.stack[1].map((item2, index2) => {
+                return (
+                  <span key={index2} className={styles.stackElemBack}>
+                    {item2}
+                  </span>
+                )
+              })}
+            </div>
           </div>
           <div>
             <h2>Features :</h2>

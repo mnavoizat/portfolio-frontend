@@ -1,6 +1,6 @@
 .top {
   width: 100%;
-  min-height: 450px;
+  min-height: 500px;
   background-color: #00ad91;
 }
 .bot {
@@ -17,7 +17,7 @@
   width: 100%;
   background-color: white;
   position: absolute;
-  top: -300px;
+  top: -350px;
   border-radius: 10px;
   display: flex;
   box-shadow: 0 2px 4px -2px lightgrey;

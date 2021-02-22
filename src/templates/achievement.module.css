@@ -74,6 +74,26 @@
   list-style-position: inside;
   padding: 5px 0;
 }
+.stackDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stackElemFront {
+  padding: 5px;
+  margin: 5px 0;
+  margin-right: 5px;
+  background-color: rgb(236, 234, 234);
+  border-radius: 5px;
+  font-weight: 100;
+}
+.stackElemBack {
+  padding: 5px;
+  margin: 5px 0;
+  margin-right: 5px;
+  background-color: rgb(182, 179, 179);
+  border-radius: 5px;
+  font-weight: 100;
+}
 @media (max-width: 1180px) {
   .details {
     padding: 0 20px;
