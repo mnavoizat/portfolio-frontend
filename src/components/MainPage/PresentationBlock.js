@@ -12,7 +12,7 @@ const PresentationBlock = () => {
           responsable technique, j'ai décidé de me reconvertir et de devenir
           développeur web afin de travailler sur des projets à échelle humaine.
           Etant arrivé au terme d'une formation intensive de 3 mois au Reacteur,
-          je suis actuellement à la recherche d'un poste/stage de développeur
+          je suis actuellement à la recherche d'un poste de développeur
           JavaScript sur Paris.
         </p>
         <p className={styles.bonjour}>

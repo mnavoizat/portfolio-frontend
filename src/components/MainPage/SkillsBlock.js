@@ -24,8 +24,9 @@ const SkillsBlock = () => {
           <ul>
             <li>React.js</li>
             <li>React Native / Expo</li>
-            <li>Create React App / Gatsby</li>
+            <li>Create React App / Gatsby / Next</li>
             <li>Redux</li>
+            <li>Material-UI / Styled-components</li>
           </ul>
         </div>
         <div className={styles.col2}>
@@ -46,6 +47,7 @@ const SkillsBlock = () => {
             <li>Express</li>
             <li>MongoDB</li>
             <li>Jest</li>
+            <li>Forest-Admin</li>
           </ul>
         </div>
       </div>

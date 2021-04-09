@@ -7,7 +7,7 @@ const TitleBlock = () => {
       <h1>Maxime Navoizat</h1>
       <div className={styles.subTitle}>
         <div className={styles.line}></div>
-        <h2>Développeur fullstack web et mobile</h2>
+        <h2>Développeur JS fullstack web et mobile</h2>
       </div>
       <img
         src="/images/profile.jpg"
